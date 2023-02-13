@@ -5,8 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baper Bank Recap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1>baper bank</h1>
+    <header>
+        <h1 class="text-5xl font-medium text-center">Bank <span class="text-cyan-700">Statement</span></h1>
+    </header>
+    <main>
+        <section class="grid grid-cols-3 gap-5 pt-10 w-3/4 mx-auto">
+            <div class="bg-blue-500 text-white rounded-lg p-5">
+                <h1 class="text-3xl">Deposit</h1>
+                <h1 id="deposit-total" class="text-4xl">$ <span id="deposit-total">00</span></h1>
+            </div>
+            <div class="bg-yellow-500 text-white rounded-lg p-5">
+                <h1 class="text-3xl">Balance</h1>
+                <h1 id="balance-total" class="text-4xl">$ <span id="deposit-total">00</span></h1>
+            </div>
+            <div class="bg-red-500 text-white rounded-lg p-5">
+                <h1 class="text-3xl">Withdraw</h1>
+                <h1 id="withdraw-total" class="text-4xl">$ <span id="deposit-total">00</span></h1>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 gap-5 pt-10 w-3/4 mx-auto">
+            <div class="bg-blue-500  rounded-lg p-5">
+                <h1 class="text-3xl text-white">Deposit Amount</h1>
+                <input id="deposit-value" class="w-full py-1 px-2 rounded-sm mt-3" type="text" placeholder="Inter Deposit Amount">
+                <button id="deposit" class="bg-green-600 py-2 px-5 text-white font-semibold mt-3 rounded hover:bg-green-500">Deposit</button>
+            </div>
+            
+            <div class="bg-red-500  rounded-lg p-5">
+                <h1 class="text-3xl text-white">Withdraw</h1>
+                <input id="withdraw-value" class="w-full py-1 px-2 rounded-sm mt-3" type="text" placeholder="Inter Withdraw Amount">
+                <button id="withdraw" class="bg-cyan-600 py-2 px-5 text-white font-semibold mt-3 rounded hover:bg-cyan-800">Withdraw</button>
+
+
+                
+            </div>
+        </section>
+    </main>
 </body>
 </html>
